@@ -4,7 +4,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer class='text-center bg-zinc-500 font-semibold'>
+    <footer class='text-center bg-zinc-700 text-white font-semibold'>
       <p>
         Connect with me on 
         <a class='font-medium' href="https://www.linkedin.com/in/tanner-k-miller/" target="_blank" rel="noopener noreferrer"> LinkedIn</a> | 
