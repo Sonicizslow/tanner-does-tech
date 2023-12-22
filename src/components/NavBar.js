@@ -1,12 +1,12 @@
 // NavBar.js
 
 import React from 'react';
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo_transparent.png'
 
 const NavBar = () => {
     return (
         <nav>
-            <img style={{width: "50px"}} src={logo} />
+            <img style={{width: "8rem"}} src={logo} />
             <ul>
                 <li>Home</li>
                 <li>Projects</li>
