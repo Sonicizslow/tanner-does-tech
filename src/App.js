@@ -1,3 +1,5 @@
+//App.js
+
 import logo from './assets/logo.svg'
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -7,9 +9,9 @@ function App() {
     <div className="App">
       <NavBar />
 
-      <body>
-        <h1>Hi, I'm Tanner</h1>
-        <h2>A dynamic tech enthusiast with a flair for development, cybersecurity, and IT support/operations.</h2>
+      <body class='text-center bg-zinc-900 text-slate-50 font-semibold'>
+        <h1 class='text-7xl py-8'>Hi, I'm Tanner</h1>
+        <h2 class='text-3xl pb-8'>A dynamic tech enthusiast with a flair for development, cybersecurity, and IT support/operations.</h2>
           <p>
             Here you'll find a collection of my projects, experiance, certifications and education, 
             and my thoughts on the evolving tech landscape.

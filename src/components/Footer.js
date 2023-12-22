@@ -4,10 +4,10 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="Footer">
+    <footer class='text-center'>
       <p>
         Connect with me on 
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"> LinkedIn</a> | 
+        <a class='font-medium' href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"> LinkedIn</a> | 
         <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer"> GitHub</a>
       </p>
       <p>Email me at <a href="mailto:contact@tmillz.dev">contact@tmillz.dev</a></p>
