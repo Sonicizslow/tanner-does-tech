@@ -15,13 +15,15 @@ function App() {
         <h2 class='text-2xl pb-10 sm:pb-15 tracking-wide leading-loose italic'>A dynamic tech enthusiast <br className='sm:hidden'/> 
         with a flair for development,<br className='hidden lg:block'/> cybersecurity, and IT support/operations.</h2>
 
-        <img className='w-4/5 mx-auto' src={imgbreak}/>
+        <img className='w-4/5 mx-auto' src={imgbreak} alt='A dimly lit, dark color, moody desk, featuring a computer screen with code on it'/>
         <p className='py-5 px-8 text-xl'>
             Here you'll find a collection of my projects, experiance, certifications and education, 
             and my thoughts on the evolving tech landscape.
         </p>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+{/* Add a picture to the opp side, every other like it's spaced now, then turn to rows not columns, same effect */}
+
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 px-8 py-5'>
           <div>
             <h3 className='font-extrabold'>My Journey</h3>
               <p className='pb-5 px-8'>
@@ -30,7 +32,8 @@ function App() {
                 blend critical care experience with tech expertise.
               </p>
           </div>
-          
+          <div></div>
+          <div></div>
           <div>
             <h3 className='font-extrabold'>Portfolio Showcase</h3>
               <p className='pb-5 px-8'>
@@ -38,7 +41,8 @@ function App() {
                   in software development, cybersecurity, and more.
               </p>
           </div>
-
+          <div></div>
+          <div></div>
           <div>
             <h3 className='font-extrabold'>Education & Certifications</h3>
               <p className='pb-5 px-8'>
@@ -46,7 +50,8 @@ function App() {
                 certifications that have shaped my tech expertise.
               </p>
           </div>
-
+          <div></div>
+          <div></div>
           <div>
             <h3 className='font-extrabold'>Blog & Insights</h3>
               <p className='pb-5 px-8'>
