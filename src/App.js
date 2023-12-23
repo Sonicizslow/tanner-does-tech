@@ -7,12 +7,17 @@ import imgbreak from './assets/main_break.png';
 
 function App() {
   return (
-    <div className="App bg-zinc-300 text-black">
+    <div className="App bg-black text-white">
       <NavBar />
 
-      <body class='text-center font-semibold text-lg'>
-        <h1 class='text-7xl py-8 sm:py-14 tracking-[0.75rem] underline'>Hi, I'm Tanner</h1>
-        <h2 class='text-2xl pb-10 sm:pb-15 tracking-wide leading-loose italic'>A dynamic tech enthusiast <br className='sm:hidden'/> 
+      <body class='text-center text-lg'>
+    
+      <div class='text-7xl py-8 sm:py-14 tracking-[0.5rem] flex justify-center items-center font-thin'>
+          <span>Hi, </span>
+          <span class='ml-4'>I'm Tanner</span>
+        </div>
+
+        <h2 class='text-xl pb-10 sm:pb-15 tracking-wide leading-loose italic font-normal'>A dynamic tech enthusiast <br className='sm:hidden'/> 
         with a flair for development,<br className='hidden lg:block'/> cybersecurity, and IT support/operations.</h2>
 
         <img className='w-4/5 mx-auto' src={imgbreak} alt='A dimly lit, dark color, moody desk, featuring a computer screen with code on it'/>
