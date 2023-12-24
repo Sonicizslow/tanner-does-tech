@@ -7,6 +7,18 @@ import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage'; 
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-38J7V7L4P4"; 
+
+ReactGA.initialize(TRACKING_ID);
+
+function usePageTracking() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+}
 
 function App() {
   return (
