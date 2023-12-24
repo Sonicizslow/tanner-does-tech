@@ -8,7 +8,9 @@ const NavBar = () => {
   return (
     <nav className="flex items-center justify-between bg-zinc-500 h-14 font-bold text-black">
       <div className="flex items-center">
-        <img src={logo} alt="Logo" style={{width: '6rem', padding: '0.5rem'}} href="#home"/>
+        <Link to="/">
+          <img src={logo} alt="Logo" style={{width: '6rem', padding: '0.5rem'}} href="#home"/>
+        </Link>
       </div>
       <ul className="flex space-x-2.5">
         <li className="text-sm hover:text-zinc-800 px-1 py-1 rounded sm:text-lg sm:px-3">
