@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import CookieConsent from './components/CookieConsent';
 import HomePage from './pages/HomePage'; 
 import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage'; 
@@ -25,7 +26,7 @@ function App() {
     <Router>
       <div className="flex flex-col bg-black text-white min-h-screen">
         <NavBar />
-
+        <CookieConsent />
         <div className='flex-grow'>
           <Routes>
             <Route path="/" element={<HomePage />} />
