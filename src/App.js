@@ -11,16 +11,18 @@ import ContactPage from './pages/ContactPage'; // Import your contact page compo
 function App() {
   return (
     <Router>
-      <div className="App bg-black text-white ">
+      <div className="flex flex-col bg-black text-white min-h-screen">
         <NavBar />
 
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          {/* Define other routes here */}
-        </Routes>
+        <div className='flex-grow'>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            {/* Define other routes here */}
+          </Routes>
+        </div>
 
         <Footer />
       </div>
