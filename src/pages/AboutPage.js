@@ -7,12 +7,12 @@ function AboutMePage() {
       <body class='text-center text-lg'>
 
         {/* Header Section */}
-        <div class='py-8 sm:py-14'>
+        <div class='py-8 sm:py-8'>
           <h1 class='text-6xl font-bold'>About Me</h1>
         </div>
 
         {/* About Me Content */}
-        <div className='px-8 py-5 font-medium'>
+        <div className='px-8 pb-5 font-medium'>
           <p className='text-xl mx-auto max-w-6xl leading-relaxed'>
           Hi there! I'm Tanner Miller, currently navigating the tech world as an IT Technical Support Specialist. 
           My journey into technology is a blend of passion, continuous learning, and a shift from a hands-on healthcare background to the dynamic realm of tech.

@@ -3,64 +3,25 @@ import imgbreak from '../assets/main_break.png';
 
 function HomePage() {
   return (
-    <div className="App bg-black text-white">
+    <div className="App bg-black text-white text-center">
 
-      <body class='text-center text-lg'>
+      <body class='text-lg'>
     
-      <div class='text-4xl py-8 sm:py-14 tracking-[0.5rem] flex justify-center items-center font-thin sm:text-7xl'>
-          <span>Hi, </span>
-          <span class='ml-4'>I'm Tanner</span>
+        <div class='text-4xl py-6 sm:py-14 tracking-[0.5rem] font-medium sm:text-7xl'>
+          <h1>Hi, I'm Tanner</h1>
         </div>
 
-        <h2 class='text-xl pb-10 sm:pb-15 tracking-wide italic font-normal sm:text-xl sm:leading-loose'>A dynamic tech enthusiast  
-        with a flair for development,<br className='hidden lg:block'/> cybersecurity, and IT support/operations.</h2>
+        <h2 class='text-xl pb-10 sm:pb-15 tracking-wide italic font-light sm:text-xl sm:leading-loose'>
+          Tech aficionado deeply interested in software development, cybersecurity, and the nuances of IT operations
+        </h2>
 
         <img className='w-4/5 mx-auto' src={imgbreak} alt='A dimly lit, dark color, moody desk, featuring a computer screen with code on it'/>
-        <p className='py-5 px-8 text-xl'>
-            Here you'll find a collection of my projects, experiance, certifications and education, 
-            and my thoughts on the evolving tech landscape.
+
+        <p className='py-5 px-8 text-xl max-w-7xl leading-relaxed mx-auto'>
+        Welcome to my personal site, a dynamic mix of ongoing projects, tech creations, and reflections on my journey from emergency services to the tech sphere. 
+        It's a place where continuous learning meets practical application. 
+        Here, you'll find not just a portfolio of work, but a living diary of my tech adventures, insights, and the ever-evolving trends that capture my interest.
         </p>
-
-{/* Add a picture to the opp side, every other like it's spaced now, then turn to rows not columns, same effect */}
-
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 px-8 py-5'>
-          <div>
-            <h3 className='font-extrabold'>My Journey</h3>
-              <p className='pb-5 px-8'>
-                From the high-pressure world of emergency services to the dynamic realm of tech,
-                my journey is a tale of passion, resilience, and adaptability. Discover how I
-                blend critical care experience with tech expertise.
-              </p>
-          </div>
-          <div></div>
-          <div></div>
-          <div>
-            <h3 className='font-extrabold'>Portfolio Showcase</h3>
-              <p className='pb-5 px-8'>
-                Explore my diverse range of tech projects, showcasing my skills
-                  in software development, cybersecurity, and more.
-              </p>
-          </div>
-          <div></div>
-          <div></div>
-          <div>
-            <h3 className='font-extrabold'>Education & Certifications</h3>
-              <p className='pb-5 px-8'>
-                A lifelong learner, here's where I share my educational journey and the
-                certifications that have shaped my tech expertise.
-              </p>
-          </div>
-          <div></div>
-          <div></div>
-          <div>
-            <h3 className='font-extrabold'>Blog & Insights</h3>
-              <p className='pb-5 px-8'>
-                Dive into my thoughts on technology, where I share insights,
-                trends, and experiences from my tech adventures.
-              </p>
-          </div>
-        </div>
-        {/* end of grid */}
 
       </body>
     </div>
