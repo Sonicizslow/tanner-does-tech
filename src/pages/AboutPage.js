@@ -1,18 +1,27 @@
 //AboutPage.js 
 
+import { Helmet } from "react-helmet";
+
 function AboutMePage() {
   return (
+    <>
+    <Helmet>
+      <title>About Tanner - Tech Journey and Skills</title>
+      <meta name="description" content="Learn about Tanner's transition from emergency services to a career in tech, including his educational background, skills in software development, cybersecurity, and IT operations." />
+    </Helmet>
+
+
     <div className="bg-black text-white">
 
-      <body class='text-center text-lg'>
+      <section class='text-center text-lg'>
 
         {/* Header Section */}
-        <div class='py-8 sm:py-8'>
+        <header class='py-8 sm:py-8'>
           <h1 class='text-6xl font-bold'>About Me</h1>
-        </div>
+        </header>
 
         {/* About Me Content */}
-        <div className='px-8 pb-5 font-medium'>
+        <main className='px-8 pb-5 font-medium'>
           <p className='text-xl mx-auto max-w-6xl leading-relaxed'>
           Hi there! I'm Tanner Miller, currently navigating the tech world as an IT Technical Support Specialist. 
           My journey into technology is a blend of passion, continuous learning, and a shift from a hands-on healthcare background to the dynamic realm of tech.
@@ -65,11 +74,12 @@ function AboutMePage() {
                 </p>
           </div>
 
-        </div>
+        </main>
 
-      </body>
+      </section>
 
     </div>
+    </>
   );
 }
 
