@@ -7,12 +7,12 @@ function HomePage() {
 
       <body class='text-center text-lg'>
     
-      <div class='text-7xl py-8 sm:py-14 tracking-[0.5rem] flex justify-center items-center font-thin'>
+      <div class='text-4xl py-8 sm:py-14 tracking-[0.5rem] flex justify-center items-center font-thin sm:text-7xl'>
           <span>Hi, </span>
           <span class='ml-4'>I'm Tanner</span>
         </div>
 
-        <h2 class='text-xl pb-10 sm:pb-15 tracking-wide leading-loose italic font-normal'>A dynamic tech enthusiast <br className='sm:hidden'/> 
+        <h2 class='text-xl pb-10 sm:pb-15 tracking-wide italic font-normal sm:text-xl sm:leading-loose'>A dynamic tech enthusiast  
         with a flair for development,<br className='hidden lg:block'/> cybersecurity, and IT support/operations.</h2>
 
         <img className='w-4/5 mx-auto' src={imgbreak} alt='A dimly lit, dark color, moody desk, featuring a computer screen with code on it'/>

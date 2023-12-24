@@ -10,7 +10,7 @@ const NavBar = () => {
       <div className="flex items-center">
         <img src={logo} alt="Logo" style={{width: '6rem', padding: '0.5rem'}} href="#home"/>
       </div>
-      <ul className="flex space-x-4">
+      <ul className="flex space-x-2.5">
         <li className="text-sm hover:text-zinc-800 px-1 py-1 rounded sm:text-lg sm:px-3">
           <Link to="/">Home</Link>
         </li>
@@ -20,7 +20,7 @@ const NavBar = () => {
         <li className="text-sm hover:text-zinc-800 px-1 py-1 rounded sm:text-lg sm:px-3">
           <Link to="/about">About Me</Link>
         </li>
-        <li className="text-sm hover:text-zinc-800 px-1 py-1 rounded sm:text-lg sm:px-3">
+        <li className="text-sm hover:text-zinc-800 px-2 py-1 rounded sm:text-lg sm:px-3">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
