@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import CookieConsent from './components/CookieConsent';
-import HomePage from './pages/HomePage'; 
+import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
-import AboutPage from './pages/AboutPage'; 
+import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import ReactGA from 'react-ga';
@@ -14,6 +14,7 @@ function PageTracker() {
   const location = useLocation();
 
   useEffect(() => {
+    // Track the page view when the location changes
     ReactGA.pageview(location.pathname + location.search);
   }, [location]);
 
@@ -22,8 +23,9 @@ function PageTracker() {
 
 function App() {
   useEffect(() => {
+    // Initialize ReactGA and track the initial pageview
     ReactGA.initialize('G-38J7V7L4P4');
-    // Track the initial pageview (optional here, as PageTracker will handle subsequent views)
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   return (
