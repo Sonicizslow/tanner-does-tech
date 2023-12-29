@@ -10,18 +10,28 @@ import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { useEffect } from 'react';
 import ReactGA from 'react-ga';
-
-const TRACKING_ID = "G-38J7V7L4P4"; 
-
-ReactGA.initialize(TRACKING_ID);
-
-function usePageTracking() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-}
+import { useHistory } from 'react-router-dom';
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('G-38J7V7L4P4');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
+  const usePageTracking = () => {
+    let history = useHistory();
+    useEffect(() => {
+      history.listen((location) => {
+        ReactGA.set({ page: location.pathname });
+        ReactGA.pageview(location.pathname);
+      });
+    }, [history]);
+  };
+
+  usePageTracking();
+
+
   return (
     <Router>
       <div className="flex flex-col bg-black text-white min-h-screen">
