@@ -10,24 +10,22 @@ import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { useEffect } from 'react';
 import ReactGA from 'react-ga';
-import { useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
 
+  const location = useLocation();
+
   useEffect(() => {
     ReactGA.initialize('G-38J7V7L4P4');
+    // Track the initial pageview
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
-  const usePageTracking = () => {
-    let history = useHistory();
-    useEffect(() => {
-      history.listen((location) => {
-        ReactGA.set({ page: location.pathname });
-        ReactGA.pageview(location.pathname);
-      });
-    }, [history]);
-  };
+  useEffect(() => {
+    // Track pageview on location change
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
 
   usePageTracking();
 
