@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, userlocation } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import CookieConsent from './components/CookieConsent';
@@ -10,7 +10,7 @@ import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { useEffect } from 'react';
 import ReactGA from 'react-ga';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+
 
 function App() {
 
