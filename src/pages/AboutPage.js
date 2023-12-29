@@ -11,7 +11,7 @@ function AboutMePage() {
     </Helmet>
 
 
-    <div className="bg-black text-white">
+    <div className="text-white">
 
       <section class='text-center text-lg'>
 

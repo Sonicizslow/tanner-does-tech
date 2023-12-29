@@ -12,7 +12,7 @@ function HomePage() {
       </Helmet>
 
 
-      <div className="App bg-black text-white text-center text-lg">
+      <div className="text-white text-center text-lg">
     
         <header class='text-4xl py-6 sm:py-14 tracking-[0.5rem] font-medium sm:text-7xl'>
           <h1>Hi, I'm Tanner</h1>

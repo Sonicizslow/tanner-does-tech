@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="text-center bg-zinc-800 text-white py-4">
+    <footer className="text-center bg-black text-white py-4">
       <div className="container mx-auto px-4">
         <div className="flex justify-center space-x-4">
           <a 

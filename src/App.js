@@ -32,7 +32,7 @@ function App() {
   return (
     <Router>
       <PageTracker /> {/* Include the PageTracker component inside the Router */}
-      <div className="flex flex-col bg-black text-white min-h-screen">
+      <div className="flex flex-col bg-gradient-to-br from-zinc-700 to-black text-white min-h-screen">
         <NavBar />
         <CookieConsent />
         <div className='flex-grow'>
