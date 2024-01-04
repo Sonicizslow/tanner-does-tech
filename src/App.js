@@ -10,15 +10,15 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import BlogListPage from './pages/BlogListPage';
 import NotFoundPage from './pages/NotFoundPage';
+import usePageTracking from './components/usePageTracking';
 
 
 function App() {
-  
+
   usePageTracking();
   
   return (
     <Router>
-      <PageTracker /> {/* Include the PageTracker component inside the Router */}
       <div className="flex flex-col bg-gradient-to-br from-zinc-700 to-black text-white min-h-screen">
         <NavBar />
         <CookieConsent />
