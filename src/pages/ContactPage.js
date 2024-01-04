@@ -1,17 +1,11 @@
 // ContactPage.js
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+
 import { Helmet } from 'react-helmet';
 import { FaEnvelope, FaHackerrank, FaBox, FaLinkedin, FaApple, FaGithub } from 'react-icons/fa';
 import { MdSecurity } from 'react-icons/md';
 
 function ContactPage() {
   
-  useEffect(() => {
-    // Track the page view with ReactGA
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-
   return (
     <>
     <Helmet>

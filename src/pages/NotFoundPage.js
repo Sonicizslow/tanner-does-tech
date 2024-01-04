@@ -1,14 +1,7 @@
 import { Link } from 'react-router-dom';
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
 
 const NotFoundPage = () => {
 
-  useEffect(() => {
-    // Track the page view with ReactGA
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-  
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-black text-white text-center">
       <h1 className="text-6xl font-bold mb-4">404</h1>

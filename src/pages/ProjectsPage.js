@@ -4,16 +4,9 @@ import Helmet from "react-helmet";
 import GoDotlogo from "../assets/1200px-Godot_icon.svg.png";
 import SiteLogo from "../assets/logo.png";
 import BoringWeatherLogo from "../assets/BoringWeather.png";
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
 
 function ProjectsPage() {
 
-  useEffect(() => {
-    // Track the page view with ReactGA
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-  
   return (
     <>
       <Helmet>
