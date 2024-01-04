@@ -1,9 +1,16 @@
 //HomePage.js
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import imgbreak from '../assets/main_break.png';
-
 import { Helmet } from 'react-helmet';
 
 function HomePage() {
+
+  useEffect(() => {
+    // Track the page view with ReactGA
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <>
       <Helmet>

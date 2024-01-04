@@ -1,5 +1,6 @@
 //BlogListPage.js
-
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import React from 'react';
 
 const posts = [
@@ -22,6 +23,12 @@ const posts = [
 ];
 
 function BlogList() {
+  
+  useEffect(() => {
+    // Track the page view with ReactGA
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <div className="bg-zinc-800 min-h-screen p-8">
       <div className="container mx-auto">
