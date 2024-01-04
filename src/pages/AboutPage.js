@@ -1,11 +1,13 @@
 //AboutPage.js 
 
 import { Helmet } from "react-helmet";
+import PageTracker from "../components/pageTracker";
 
 function AboutMePage() {
 
   return (
     <>
+    <PageTracker />
     <Helmet>
       <title>About Tanner - Tech Journey and Skills</title>
       <meta name="description" content="Learn about Tanner's transition from emergency services to a career in tech, including his educational background, skills in software development, cybersecurity, and IT operations." />

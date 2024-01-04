@@ -3,11 +3,13 @@
 import { Helmet } from 'react-helmet';
 import { FaEnvelope, FaHackerrank, FaBox, FaLinkedin, FaApple, FaGithub } from 'react-icons/fa';
 import { MdSecurity } from 'react-icons/md';
+import PageTracker from '../components/pageTracker';
 
 function ContactPage() {
   
   return (
     <>
+    <PageTracker />
     <Helmet>
       <title>Contact Tanner Miller - Get in Touch</title>
       <meta name="description" content="Connect with Tanner for opportunities, collaborations, or tech discussions. Reach out via email, LinkedIn, GitHub, or other social platforms." />

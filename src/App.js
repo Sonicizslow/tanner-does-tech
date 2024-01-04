@@ -10,12 +10,9 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import BlogListPage from './pages/BlogListPage';
 import NotFoundPage from './pages/NotFoundPage';
-import usePageTracking from './components/usePageTracking';
-
+import PageTracker from './components/pageTracker';
 
 function App() {
-
-  usePageTracking();
   
   return (
     <Router>

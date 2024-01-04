@@ -1,5 +1,5 @@
 //BlogListPage.js
-
+import PageTracker from "../components/pageTracker";
 
 const posts = [
   {
@@ -23,6 +23,8 @@ const posts = [
 function BlogList() {
 
   return (
+    <>
+    <PageTracker />
     <div className="bg-zinc-800 min-h-screen p-8">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold text-center mb-12">The Secret Blog</h1>
@@ -38,6 +40,7 @@ function BlogList() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

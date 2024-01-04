@@ -1,10 +1,12 @@
 //HomePage.js
 import imgbreak from '../assets/main_break.png';
 import { Helmet } from 'react-helmet';
+import PageTracker from '../components/pageTracker';
 
 function HomePage() {
   return (
     <>
+    <PageTracker />
       <Helmet>
         <title>Tanner - Tech Enthusiast</title>
         <meta name="description" content="Welcome to Tanner's personal site, showcasing a diverse range of tech projects and insights. Discover Tanner's journey from emergency services to the tech world, his passion for software development, cybersecurity, and IT operations." />

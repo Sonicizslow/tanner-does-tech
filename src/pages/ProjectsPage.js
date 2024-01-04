@@ -4,11 +4,13 @@ import Helmet from "react-helmet";
 import GoDotlogo from "../assets/1200px-Godot_icon.svg.png";
 import SiteLogo from "../assets/logo.png";
 import BoringWeatherLogo from "../assets/BoringWeather.png";
+import PageTracker from "../components/pageTracker";
 
 function ProjectsPage() {
 
   return (
     <>
+    <PageTracker />
       <Helmet>
         <title>Tanner's Projects - Showcase of Tech Creations</title>
         <meta name="description" content="Explore Tanner's portfolio of tech projects, featuring a range of work in software development, mobile app creation, and cybersecurity." />
