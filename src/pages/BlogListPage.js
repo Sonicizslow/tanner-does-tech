@@ -1,7 +1,6 @@
 //BlogListPage.js
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
-import React from 'react';
 
 const posts = [
   {
@@ -23,7 +22,7 @@ const posts = [
 ];
 
 function BlogList() {
-  
+
   useEffect(() => {
     // Track the page view with ReactGA
     ReactGA.pageview(window.location.pathname + window.location.search);
