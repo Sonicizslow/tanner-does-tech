@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import BlogListPage from './pages/BlogListPage';
 import NotFoundPage from './pages/NotFoundPage';
 import ReactGA from 'react-ga';
 
@@ -31,7 +32,7 @@ function App() {
   return (
     <Router>
       <PageTracker /> {/* Include the PageTracker component inside the Router */}
-      <div className="flex flex-col bg-black text-white min-h-screen">
+      <div className="flex flex-col bg-gradient-to-br from-zinc-700 to-black text-white min-h-screen">
         <NavBar />
         <CookieConsent />
         <div className='flex-grow'>
@@ -40,6 +41,7 @@ function App() {
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/Blog" element={<BlogListPage />} />
             <Route path="*" element={<NotFoundPage />} />
             {/* Define other routes here */}
           </Routes>

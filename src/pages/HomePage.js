@@ -1,9 +1,16 @@
 //HomePage.js
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import imgbreak from '../assets/main_break.png';
-
 import { Helmet } from 'react-helmet';
 
 function HomePage() {
+
+  useEffect(() => {
+    // Track the page view with ReactGA
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -12,7 +19,7 @@ function HomePage() {
       </Helmet>
 
 
-      <div className="App bg-black text-white text-center text-lg">
+      <div className="text-white text-center text-lg">
     
         <header class='text-4xl py-6 sm:py-14 tracking-[0.5rem] font-medium sm:text-7xl'>
           <h1>Hi, I'm Tanner</h1>

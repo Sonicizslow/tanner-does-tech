@@ -1,8 +1,15 @@
 //AboutPage.js 
-
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import { Helmet } from "react-helmet";
 
 function AboutMePage() {
+
+  useEffect(() => {
+    // Track the page view with ReactGA
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <>
     <Helmet>
@@ -11,7 +18,7 @@ function AboutMePage() {
     </Helmet>
 
 
-    <div className="bg-black text-white">
+    <div className="text-white">
 
       <section class='text-center text-lg'>
 
