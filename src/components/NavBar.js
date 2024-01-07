@@ -1,7 +1,7 @@
 // NavBar.js
 
 import React from 'react';
-import logo from '../assets/logo_transparent.png';
+import logo from '../assets/logo_reversed_colors.png';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -9,7 +9,7 @@ const NavBar = () => {
     <nav className="flex items-center justify-between bg-black h-14 font-bold text-zinc-200">
       <div className="flex items-center">
         <Link to="/">
-          <img src={logo} alt="Logo" style={{width: '6rem', padding: '0.5rem'}} href="#home"/>
+          <img src={logo} alt="Logo" style={{marginLeft: '1rem', width: '3.5rem', background: 'white'}} href="#home"/>
         </Link>
       </div>
       <ul className="flex space-x-2.5">
