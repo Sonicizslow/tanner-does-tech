@@ -1,7 +1,7 @@
 //ProjectsPage.js
 
 import Helmet from "react-helmet";
-import GoDotlogo from "../assets/1200px-Godot_icon.svg.png";
+import Books from "../assets/books.jpg";
 import SiteLogo from "../assets/logo.png";
 import BoringWeatherLogo from "../assets/BoringWeather.png";
 import PageTracker from "../components/pageTracker";
@@ -104,43 +104,36 @@ function ProjectsPage() {
             </div>
             {/* End of Personal Site */}
 
-          {/* START OF DREAM DETECTIVE */}
+          {/* START OF Capstone */}
             <div className='border border-gray-200 rounded-lg p-4'>
-              <img src={GoDotlogo} alt="GoDot's logo, featuring a rounded blue robot head" className="w-full h-auto mb-4" />
-              <h3 className="font-extrabold text-2xl mb-2">Dream Detective - Game Jam Project</h3>
+              <img src={Books} alt="GoDot's logo, featuring a rounded blue robot head" className="w-full h-auto mb-4" />
+              <h3 className="font-extrabold text-2xl mb-2">University of Phoenix - Capstone "How-To Bookstore"</h3>
 
               <h4 className="font-bold text-xl">Overview:</h4>
                 <p className="mt-1">
-                  "Dream Detective" is a 2D top-down game created for a Game Jam, targeting completion by January 1st, 2024. Conceived and developed within a tight timeframe, this game is a product of rapid development and on-the-fly creativity by myself and fellow developers, Jordan and Mike.
+                  For the final three credits of my computer science degree, the course tasked me with creating an e-commerce application over the course of 5 weeks.
                 </p>
 
               <h4 className="font-bold text-xl mt-4">Development Dynamics:</h4>
                 <ul className="list-disc list-inside mt-1">
-                  <li>Game Jam Environment: Emphasizes quick, creative problem-solving and efficient coding practices.</li>
-                  <li>Godot Engine: Utilizes the versatility of Godot, which is ideal for fast-paced game development cycles.</li>
-                  <li>Collaboration under Pressure: Teamwork with Jordan and Mike, balancing speed with functionality.</li>
+                  <li>Timeline: Due to the short timeline to build an MVP, planning tasks and prioritizing work on the project while working full time was key</li>
+                  <li>Languages: Professor requested development using HTML, CSS, and Javascript</li>
+                  <li>Documentation: Part of the capstone is documentation on planning development, user stories, and task completion. </li>
                 </ul>
 
-              <h4 className="font-bold text-xl mt-4">Game Mechanics and Features:</h4>
+              <h4 className="font-bold text-xl mt-4">Features:</h4>
                 <ul className="list-disc list-inside mt-1">
-                  <li>Fast-Paced Gameplay: Focuses on engaging and intuitive play, suitable for a game jam's quick turnaround.</li>
-                  <li>Storytelling: Creative narrative woven into the gameplay, despite the limited development period.</li>
-                  <li>Ad-hoc Design: A testament to our adaptability and ability to implement ideas rapidly.</li>
+                  <li>Search Function: Implemented search function to find matches in title, book description, or author's name.</li>
+                  <li>Filtering: Realtime dynamic filtering.</li>
+                  <li>Cart: Added ability for users to add items to their cart and to view the cart.</li>
                 </ul>
 
               <h4 className="font-bold text-xl mt-4">Personal Insights:</h4>
                 <p className="mt-1">
-                  Participating in the game jam with "Dream Detective" has been an exhilarating challenge, pushing the boundaries of quick decision-making and immediate implementation, 
-                  reflecting a different spectrum of my game development skills.
-                </p>
-
-              <h4 className="font-bold text-xl mt-4">Game Jam Anticipation:</h4>
-                <p className="mt-1">
-                  With the game jam deadline approaching, "Dream Detective" stands as a testament to what can be achieved under time constraints. 
-                  This project highlights our ability to harness creativity and technical skills in a fast-paced development setting, showcasing our dedication to the art of game development.
+                  This has been written at the start of the project and will be updated as time permits. So far I find it difficult to not want to add on more features, but we were heavily advised to start small and avoid scope creep  
                 </p>
             </div>
-            {/* END OF DREAM DETECTIVE */}
+            {/* END OF Capstone */}
             
             {/* 
               template for more projects
