@@ -1,6 +1,7 @@
 //Footer.js
 
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaHackerrank, FaBox, FaApple } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -25,6 +26,14 @@ function Footer() {
             aria-label="GitHub"
           >
             <FaGithub size={24} />
+          </a>
+
+          <a href="https://apps.apple.com/us/developer/tanner-miller/id1669843036" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             aria-label="Apple App Store" 
+             className="hover:text-gray-300">
+            <FaApple size={24} />
           </a>
 
           <a 

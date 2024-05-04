@@ -16,8 +16,8 @@ function App() {
   
   return (
     <Router>
-      <div className="flex flex-col bg-gradient-to-br from-zinc-700 to-black text-white min-h-screen">
-        <NavBar />
+      <div className="flex flex-col bg-black text-white min-h-screen">
+        {/* <NavBar /> */}
         <CookieConsent />
         <div className='flex-grow'>
           <Routes>
